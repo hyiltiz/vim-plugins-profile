@@ -41,10 +41,11 @@ which needs fine tuning? Well, using vim's builtin profiling `vim
 startup. However, the data is for each functions. You will have to
 figure out the math, and make sure those functions calls are form the
 same plugins. Even some sorting might help, but sorting the timing for
-each functions does not really make sense.
+each functions does not really make sense because it is really time of the
+plugins (but not the functions ) that you really care about.  
 
-І am poor at calculating those math myself. With the power of bash
-scripts and R, we can get all we want.
+І am poor at doing mental math, even for simple sums. However, with the power
+of a simple bash script and R, we can get all we want.
 
 ### Installation
 
