@@ -49,7 +49,7 @@ scripts and R, we can get all we want.
 ### Installation
 
 This is *NOT* a vim plugin! This is simply a profiler for your vim
-plugins installed through vim-plug.
+plugins that are installed through vim-plug.
 
 Download the `.zip` here and then simply run the bash script:
 
