@@ -1,0 +1,223 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.007  000.007: --- VIM STARTING ---
+000.074  000.067: Allocated generic buffers
+000.337  000.263: locale set
+000.353  000.016: GUI prepared
+000.356  000.003: clipboard setup
+000.363  000.007: window checked
+000.793  000.430: inits 1
+000.803  000.010: parsing arguments
+005.975  005.172: expanding arguments
+010.160  004.185: shell init
+010.462  000.302: Termcap init
+010.505  000.043: inits 2
+013.096  002.591: init highlight
+013.328  000.143  000.143: sourcing $VIM/vimrc
+021.387  007.560  007.560: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/colors/murphy.vim
+022.343  000.301  000.301: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+022.800  000.157  000.157: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+023.194  000.315  000.315: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+023.441  001.731  000.958: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/colors/murphy.vim
+023.551  001.950  000.219: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/synload.vim
+041.821  018.192  018.192: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/filetype.vim
+041.872  020.354  000.212: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syntax.vim
+041.962  000.012  000.012: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/filetype.vim
+042.077  000.050  000.050: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim
+042.185  000.044  000.044: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/indent.vim
+055.716  013.126  013.126: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/ftplugin/man.vim
+057.569  001.706  001.706: sourcing /Users/hormetyiltiz/.vim/autoload/plug.vim
+070.177  002.043  002.043: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/ftoff.vim
+094.676  000.126  000.126: sourcing /Users/hormetyiltiz/.vim/plugged/vim-markdown/ftdetect/markdown.vim
+094.856  000.062  000.062: sourcing /Users/hormetyiltiz/.vim/plugged/ultisnips/ftdetect/snippets.vim
+094.956  000.067  000.067: sourcing /Users/hormetyiltiz/.vim/plugged/ultisnips/ftdetect/UltiSnips.vim
+095.247  000.124  000.124: sourcing /Users/hormetyiltiz/.vim/plugged/vim-go/ftdetect/gofiletype.vim
+095.582  000.141  000.141: sourcing /Users/hormetyiltiz/.vim/plugged/csv.vim/ftdetect/csv.vim
+095.974  000.052  000.052: sourcing /Users/hormetyiltiz/.vim/plugged/vim-orgmode/ftdetect/org.vim
+096.636  000.453  000.453: sourcing /Users/hormetyiltiz/.vim/plugged/Vim-R-plugin/ftdetect/r.vim
+096.767  000.043  000.043: sourcing /Users/hormetyiltiz/.vim/plugged/myVimPlugins/ftdetect/gitary.vim
+096.992  022.207  021.139: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/filetype.vim
+097.462  000.017  000.017: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim
+097.948  000.025  000.025: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/indent.vim
+098.291  000.192  000.192: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/nosyntax.vim
+100.315  000.266  000.266: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+101.280  000.255  000.255: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+102.019  000.250  000.250: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+102.415  003.216  002.445: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/colors/murphy.vim
+102.595  003.858  000.642: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/synload.vim
+102.646  004.607  000.557: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syntax.vim
+104.766  000.274  000.274: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+105.573  000.265  000.265: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+165.560  061.841  061.302: sourcing /Users/hormetyiltiz/.vim/plugged/vim-colorschemes/colors/Tomorrow-Night-Bright.vim
+167.145  000.304  000.304: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+168.250  000.301  000.301: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+169.342  000.299  000.299: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+170.248  000.297  000.297: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+171.246  005.245  004.044: sourcing /Users/hormetyiltiz/.vim/plugged/vim-colorschemes/colors/holokai.vim
+172.953  000.307  000.307: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+173.873  000.299  000.299: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+204.240  032.481  031.875: sourcing /Users/hormetyiltiz/.vim/plugged/vim-vendetta/colors/vendetta.vim
+205.872  000.316  000.316: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+206.867  000.377  000.377: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+236.729  032.053  031.360: sourcing /Users/hormetyiltiz/.vim/plugged/vim-colorschemes/colors/jellybeans.vim
+237.569  224.190  020.819: sourcing $HOME/.vimrc
+237.576  000.147: sourcing vimrc file(s)
+238.280  000.301  000.301: sourcing /Users/hormetyiltiz/.vim/plugged/ctrlp.vim/autoload/ctrlp/mrufiles.vim
+238.479  000.714  000.413: sourcing /Users/hormetyiltiz/.vim/plugged/ctrlp.vim/plugin/ctrlp.vim
+238.717  000.085  000.085: sourcing /Users/hormetyiltiz/.vim/plugged/vim-hugefile/plugin/hugefile.vim
+238.924  000.059  000.059: sourcing /Users/hormetyiltiz/.vim/plugged/gundo.vim/plugin/gundo.vim
+239.698  000.652  000.652: sourcing /Users/hormetyiltiz/.vim/plugged/taglist.vim/plugin/taglist.vim
+239.954  000.126  000.126: sourcing /Users/hormetyiltiz/.vim/plugged/vim-quickrun/plugin/quickrun.vim
+240.376  000.312  000.312: sourcing /Users/hormetyiltiz/.vim/plugged/tabular/plugin/Tabular.vim
+240.880  000.123  000.123: sourcing /Users/hormetyiltiz/.vim/plugged/ultisnips/autoload/UltiSnips/map_keys.vim
+240.992  000.492  000.369: sourcing /Users/hormetyiltiz/.vim/plugged/ultisnips/plugin/UltiSnips.vim
+241.153  000.048  000.048: sourcing /Users/hormetyiltiz/.vim/plugged/vim-snippets/plugin/vimsnippets.vim
+246.485  002.985  002.985: sourcing /Users/hormetyiltiz/.vim/plugged/vim-jsbeautify/plugin/beautifier.vim
+247.803  001.154  001.154: sourcing /Users/hormetyiltiz/.vim/plugged/gitv/plugin/gitv.vim
+248.195  000.248  000.248: sourcing /Users/hormetyiltiz/.vim/plugged/vim-go/plugin/go.vim
+250.815  002.503  002.503: sourcing /Users/hormetyiltiz/.vim/plugged/vim-devicons/plugin/webdevicons.vim
+251.079  000.137  000.137: sourcing /Users/hormetyiltiz/.vim/plugged/vimproc.vim/plugin/vimproc.vim
+251.313  000.118  000.118: sourcing /Users/hormetyiltiz/.vim/plugged/tabpagebuffer.vim/plugin/buffer.vim
+251.612  000.063  000.063: sourcing /Users/hormetyiltiz/.vim/plugged/neocomplete.vim/plugin/neocomplete/buffer.vim
+251.705  000.062  000.062: sourcing /Users/hormetyiltiz/.vim/plugged/neocomplete.vim/plugin/neocomplete/dictionary.vim
+251.794  000.059  000.059: sourcing /Users/hormetyiltiz/.vim/plugged/neocomplete.vim/plugin/neocomplete/tag.vim
+251.989  000.148  000.148: sourcing /Users/hormetyiltiz/.vim/plugged/neocomplete.vim/plugin/neocomplete.vim
+252.844  000.720  000.720: sourcing /Users/hormetyiltiz/.vim/plugged/vimshell.vim/plugin/vimshell.vim
+254.078  000.499  000.499: sourcing /Users/hormetyiltiz/.vim/plugged/unite.vim/autoload/unite/custom.vim
+254.243  001.015  000.516: sourcing /Users/hormetyiltiz/.vim/plugged/unite.vim/plugin/unite/bookmark.vim
+254.500  000.214  000.214: sourcing /Users/hormetyiltiz/.vim/plugged/unite.vim/plugin/unite/buffer.vim
+254.624  000.087  000.087: sourcing /Users/hormetyiltiz/.vim/plugged/unite.vim/plugin/unite/history_yank.vim
+254.788  000.130  000.130: sourcing /Users/hormetyiltiz/.vim/plugged/unite.vim/plugin/unite/window.vim
+255.131  000.308  000.308: sourcing /Users/hormetyiltiz/.vim/plugged/unite.vim/plugin/unite.vim
+255.421  000.125  000.125: sourcing /Users/hormetyiltiz/.vim/plugged/ag.vim/plugin/ag.vim
+255.623  000.080  000.080: sourcing /Users/hormetyiltiz/.vim/plugged/rainbow_parentheses.vim/plugin/rainbow_parentheses.vim
+255.808  000.077  000.077: sourcing /Users/hormetyiltiz/.vim/plugged/gist-vim/plugin/gist.vim
+259.170  003.251  003.251: sourcing /Users/hormetyiltiz/.vim/plugged/emmet-vim/plugin/emmet.vim
+259.861  000.493  000.493: sourcing /Users/hormetyiltiz/.vim/plugged/NrrwRgn/plugin/NrrwRgn.vim
+260.313  000.244  000.244: sourcing /Users/hormetyiltiz/.vim/plugged/csv.vim/plugin/csv.vim
+260.705  000.190  000.190: sourcing /Users/hormetyiltiz/.vim/plugged/vim-diff-enhanced/plugin/EnhancedDiff.vim
+262.892  001.995  001.995: sourcing /Users/hormetyiltiz/.vim/plugged/tagbar/plugin/tagbar.vim
+270.008  006.759  006.759: sourcing /Users/hormetyiltiz/.vim/plugged/nerdcommenter/plugin/NERD_commenter.vim
+270.650  000.046  000.046: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/autoloclist.vim
+270.718  000.034  000.034: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/balloons.vim
+270.784  000.034  000.034: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/checker.vim
+270.860  000.045  000.045: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/cursor.vim
+270.967  000.056  000.056: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/highlighting.vim
+271.078  000.057  000.057: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/loclist.vim
+271.199  000.066  000.066: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/modemap.vim
+271.294  000.042  000.042: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/notifiers.vim
+271.364  000.037  000.037: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/registry.vim
+271.432  000.037  000.037: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/signs.vim
+272.614  000.663  000.663: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/autoload/syntastic/util.vim
+284.928  000.070  000.070: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/autoloclist.vim
+285.032  000.070  000.070: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/balloons.vim
+285.302  000.239  000.239: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/checker.vim
+285.450  000.117  000.117: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/cursor.vim
+285.581  000.101  000.101: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/highlighting.vim
+285.971  000.360  000.360: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/loclist.vim
+286.108  000.103  000.103: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/modemap.vim
+286.219  000.082  000.082: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/notifiers.vim
+286.586  000.338  000.338: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/registry.vim
+286.742  000.125  000.125: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic/signs.vim
+288.925  017.461  015.193: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/plugin/syntastic.vim
+302.454  013.364  013.364: sourcing /Users/hormetyiltiz/.vim/plugged/vim-easymotion/plugin/EasyMotion.vim
+303.372  000.724  000.724: sourcing /Users/hormetyiltiz/.vim/plugged/vim-endwise/plugin/endwise.vim
+308.525  005.000  005.000: sourcing /Users/hormetyiltiz/.vim/plugged/vim-fugitive/plugin/fugitive.vim
+309.571  000.903  000.903: sourcing /Users/hormetyiltiz/.vim/plugged/vim-surround/plugin/surround.vim
+310.507  000.791  000.791: sourcing /Users/hormetyiltiz/.vim/plugged/vim-speeddating/plugin/speeddating.vim
+314.902  004.276  004.276: sourcing /Users/hormetyiltiz/.vim/plugged/vim-unimpaired/plugin/unimpaired.vim
+316.462  001.387  001.387: sourcing /Users/hormetyiltiz/.vim/plugged/vim-abolish/plugin/abolish.vim
+316.981  000.392  000.392: sourcing /Users/hormetyiltiz/.vim/plugged/vim-tbone/plugin/tbone.vim
+318.859  001.614  001.614: sourcing /Users/hormetyiltiz/.fzf/plugin/fzf.vim
+319.444  000.439  000.439: sourcing /Users/hormetyiltiz/.vim/plugged/vim-easy-align/plugin/easy_align.vim
+319.621  000.057  000.057: sourcing /Users/hormetyiltiz/.vim/plugged/goyo.vim/plugin/goyo.vim
+319.839  000.105  000.105: sourcing /Users/hormetyiltiz/.vim/plugged/limelight.vim/plugin/limelight.vim
+320.077  000.096  000.096: sourcing /Users/hormetyiltiz/.vim/plugged/vim-github-dashboard/plugin/github_dashboard.vim
+321.256  000.169  000.169: sourcing /Users/hormetyiltiz/.vim/plugged/vim-gitgutter/autoload/gitgutter/highlight.vim
+322.578  002.354  002.185: sourcing /Users/hormetyiltiz/.vim/plugged/vim-gitgutter/plugin/gitgutter.vim
+322.797  000.093  000.093: sourcing /Users/hormetyiltiz/.vim/plugged/promptline.vim/plugin/promptline.vim
+327.683  004.748  004.748: sourcing /Users/hormetyiltiz/.vim/plugged/YankRing.vim/plugin/yankring.vim
+328.110  000.305  000.305: sourcing /Users/hormetyiltiz/.vim/plugged/numbers.vim/plugin/numbers.vim
+329.199  000.211  000.211: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline.vim
+329.828  000.169  000.169: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/init.vim
+330.710  000.152  000.152: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/parts.vim
+331.429  003.204  002.672: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/plugin/airline.vim
+331.697  000.070  000.070: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/plugin/xolox/misc.vim
+332.295  000.047  000.047: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/autoload/xolox/misc.vim
+332.912  000.243  000.243: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/autoload/xolox/misc/os.vim
+333.942  000.159  000.159: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/autoload/xolox/misc/timer.vim
+335.410  000.144  000.144: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/autoload/xolox/misc/option.vim
+336.197  002.838  002.535: sourcing /Users/hormetyiltiz/.vim/plugged/vim-easytags/autoload/xolox/easytags.vim
+336.922  000.284  000.284: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/autoload/xolox/misc/path.vim
+345.414  000.101  000.101: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/autoload/xolox/misc/list.vim
+346.419  000.226  000.226: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/autoload/xolox/misc/msg.vim
+347.661  000.106  000.106: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/autoload/xolox/misc/escape.vim
+359.965  000.165  000.165: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/autoload/xolox/misc/version.vim
+361.386  000.108  000.108: sourcing /Users/hormetyiltiz/.vim/plugged/vim-misc/autoload/xolox/misc/cursorhold.vim
+361.444  029.638  025.520: sourcing /Users/hormetyiltiz/.vim/plugged/vim-easytags/plugin/easytags.vim
+374.709  013.094  013.094: sourcing /Users/hormetyiltiz/.vim/plugged/vim-online-thesaurus/plugin/online-thesaurus.vim
+375.243  000.324  000.324: sourcing /Users/hormetyiltiz/.vim/plugged/vim-lexical/plugin/lexical.vim
+375.685  000.329  000.329: sourcing /Users/hormetyiltiz/.vim/plugged/vim-wordy/plugin/wordy.vim
+376.175  000.377  000.377: sourcing /Users/hormetyiltiz/.vim/plugged/vim-pencil/plugin/pencil.vim
+377.513  001.097  001.097: sourcing /Users/hormetyiltiz/.vim/plugged/matchit.zip/plugin/matchit.vim
+377.915  000.229  000.229: sourcing /Users/hormetyiltiz/.vim/plugged/myVimPlugins/plugin/setcolors.vim
+379.744  000.534  000.534: sourcing /Users/hormetyiltiz/.vim/plugged/delimitMate/autoload/delimitMate.vim
+383.484  005.456  004.922: sourcing /Users/hormetyiltiz/.vim/plugged/delimitMate/plugin/delimitMate.vim
+384.111  000.112  000.112: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/getscriptPlugin.vim
+384.512  000.366  000.366: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/gzip.vim
+384.858  000.310  000.310: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/logiPat.vim
+385.135  000.242  000.242: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/matchparen.vim
+386.060  000.890  000.890: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/netrwPlugin.vim
+386.210  000.083  000.083: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/rrhelper.vim
+386.319  000.064  000.064: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/spellfile.vim
+386.580  000.219  000.219: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/tarPlugin.vim
+386.798  000.153  000.153: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/tohtml.vim
+387.042  000.201  000.201: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/vimballPlugin.vim
+387.395  000.299  000.299: sourcing /usr/local/Cellar/macvim/7.4-77/MacVim.app/Contents/Resources/vim/runtime/plugin/zipPlugin.vim
+388.277  000.371  000.371: sourcing /Users/hormetyiltiz/.vim/plugged/tabular/autoload/tabular.vim
+390.519  002.959  002.588: sourcing /Users/hormetyiltiz/.vim/plugged/tabular/after/plugin/TabularMaps.vim
+390.904  000.222  000.222: sourcing /Users/hormetyiltiz/.vim/plugged/ultisnips/after/plugin/UltiSnips_after.vim
+391.435  000.385  000.385: sourcing /Users/hormetyiltiz/.vim/plugged/indentLine/after/plugin/indentLine.vim
+391.472  013.357: loading plugins
+391.479  000.007: inits 3
+394.104  002.625: reading viminfo
+394.144  000.040: setting raw mode
+394.153  000.009: start termcap
+394.233  000.080: clearing screen
+395.536  000.376  000.376: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions.vim
+396.418  000.228  000.228: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/quickfix.vim
+397.294  000.117  000.117: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/unite.vim
+397.939  000.106  000.106: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/netrw.vim
+398.787  000.220  000.220: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/ctrlp.vim
+400.369  000.202  000.202: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/hunks.vim
+401.007  000.131  000.131: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/tagbar.vim
+401.654  000.157  000.157: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/csv.vim
+402.386  000.212  000.212: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/branch.vim
+403.137  000.120  000.120: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/syntastic.vim
+403.814  000.198  000.198: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/whitespace.vim
+404.546  000.111  000.111: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/wordcount.vim
+405.247  000.216  000.216: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/tabline.vim
+405.888  000.130  000.130: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/autoshow.vim
+406.706  000.212  000.212: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/tabs.vim
+407.802  000.567  000.567: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/buffers.vim
+408.463  000.125  000.125: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/nrrwrgn.vim
+413.843  000.355  000.355: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/section.vim
+416.718  001.577  001.577: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/highlighter.vim
+421.955  000.154  000.154: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/themes.vim
+422.385  001.488  001.334: sourcing /Users/hormetyiltiz/.vim/plugged/vim-colors-pencil/autoload/airline/themes/pencil.vim
+428.686  000.323  000.323: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/util.vim
+431.392  000.313  000.313: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/builder.vim
+433.190  000.299  000.299: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/default.vim
+448.633  047.617: opening buffers
+449.554  000.325  000.325: sourcing /Users/hormetyiltiz/.vim/plugged/syntastic/autoload/syntastic/log.vim
+451.099  000.266  000.266: sourcing /Users/hormetyiltiz/.vim/plugged/vim-gitgutter/autoload/gitgutter.vim
+451.764  000.282  000.282: sourcing /Users/hormetyiltiz/.vim/plugged/vim-gitgutter/autoload/gitgutter/utility.vim
+452.417  000.210  000.210: sourcing /Users/hormetyiltiz/.vim/plugged/vim-gitgutter/autoload/gitgutter/hunk.vim
+456.844  007.128: BufEnter autocommands
+456.851  000.007: editing files in windows
+463.560  000.272  000.272: sourcing /Users/hormetyiltiz/.vim/plugged/vim-airline/autoload/airline/extensions/tabline/buflist.vim
+463.992  000.299  000.299: sourcing /Users/hormetyiltiz/.vim/plugged/ctrlp.vim/autoload/ctrlp/utils.vim
