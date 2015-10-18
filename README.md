@@ -49,9 +49,10 @@ scripts and R, we can get all we want.
 ### Installation
 
 This is *NOT* a vim plugin! This is simply a profiler for your vim
-plugins that are installed through vim-plug.
+plugins that are installed through [vim-plug].
 
-Download the `.zip` here and then simply run the bash script:
+Download the `.zip` [here](zip) and then simply run the bash script:
+
 
 ```BASH
 sh ./vim-plugins-profile.sh
@@ -75,3 +76,5 @@ are installed through Vundle, NeuBundle, Pathogen etc. I do not have
 them but we can make a small switch that asks you which plugin you have
 (or simply audo-detect).
 
+[zip]: https://github.com/hyiltiz/vim-plugins-profile/archive/master.zip
+[vim-plug]: https://github.com/junegunn/vim-plug
