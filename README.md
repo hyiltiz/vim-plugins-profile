@@ -31,11 +31,11 @@ Done!
 ```
 
 
-If you use vim-plug to install your vim (gvim or macvim) plugins, then
+If you use [vim-plug] to install your vim (gvim or macvim) plugins, then
 chances are high that it gets addictive. You will find yourself with
 several dozens of useful plugins. 
 
-vim-plug offers you to load your plugins on-demand (lazy-loading). But
+[vim-plug] offers you to load your plugins on-demand (lazy-loading). But
 which needs fine tuning? Well, using vim's builtin profiling `vim
 --startuptime` you can get a timing for all function calls during
 startup. However, the data is for each functions. You will have to
