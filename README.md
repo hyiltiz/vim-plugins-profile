@@ -1,4 +1,5 @@
 Here is a screetshot to have a quick look at what this is all about.
+
 ![My Plugins Profile](./test/profile.png)
 
 Here is a peek at the profiling result for my plugins:
