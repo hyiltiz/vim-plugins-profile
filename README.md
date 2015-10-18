@@ -36,7 +36,7 @@ chances are high that it gets addictive. You will find yourself with
 several dozens of useful plugins. 
 
 [vim-plug] offers you to load your plugins on-demand (lazy-loading). But
-which needs fine tuning? Well, using vim's builtin profiling `vim
+which needs fine tuning? Well, using vim's built-in profiling `vim
 --startuptime` you can get a timing for all function calls during
 startup. However, the data is for each functions. You will have to
 figure out the math, and make sure those functions calls are form the
@@ -44,7 +44,7 @@ same plugins. Even some sorting might help, but sorting the timing for
 each functions does not really make sense because it is really time of the
 plugins (but not the functions ) that you really care about.  
 
-І am poor at doing mental math, even for simple sums. However, with the power
+I am poor at doing mental math, even for simple sums. However, with the power
 of a simple bash script and R, we can get all we want.
 
 ### Installation
@@ -63,7 +63,7 @@ Then open the `profile.png` file for the result! It is that simple.
 
 ### Dependency
 
-You will need to install several tools before you can run this. Chanes
+You will need to install several tools before you can run this. Chances
 are that you already have them. Here are the list of dependencies:
 
  - R
@@ -73,9 +73,9 @@ are that you already have them. Here are the list of dependencies:
 ### TODO
 
 It is very easy to adjust this script to profile your vim plugins that
-are installed through Vundle, NeuBundle, Pathogen etc. I do not have
+are installed through Vundle, NeoBundle, Pathogen etc. I do not have
 them but we can make a small switch that asks you which plugin you have
-(or simply audo-detect).
+(or simply auto-detect).
 
 [zip]: https://github.com/hyiltiz/vim-plugins-profile/archive/master.zip
 [vim-plug]: https://github.com/junegunn/vim-plug
