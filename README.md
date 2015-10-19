@@ -63,8 +63,7 @@ Then open the `profile.png` file for the result! It is that simple.
 
 ### Dependency
 
-You will need to install several tools before you can run this. Chances
-are that you already have them. Here are the list of dependencies:
+You will need to install several tools before you can run this. Chances are that you already have them. The script prompts whether it should install the `R:ggplot2` package if you already have `R`. Here are the list of dependencies:
 
  - R
  - R:ggplot2 (the ggplot2 package for R)
