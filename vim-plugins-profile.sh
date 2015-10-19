@@ -29,7 +29,7 @@ echo " "
 echo "=========================================="
 echo "Top 10 Plugins That Slows Down Vim Startup"
 echo "=========================================="
-cat -n results.csv |head -n 10
+cat -n profile.csv |head -n 10
 echo "=========================================="
 
 echo "Done!"
