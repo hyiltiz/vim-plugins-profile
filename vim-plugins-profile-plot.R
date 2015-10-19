@@ -1,18 +1,31 @@
 if("ggplot2" %in% rownames(installed.packages()) == FALSE) {
 
+  isOk <- FALSE
   # we need to install the ggplot2 package
-  while(is.na(acr) | acr <= 0 | acr >= 1 ){
-    acr <- readline("and the average cancellation rate between 0 and 1 :")
-    acr <- ifelse(grepl("[^0-9.]",acr),-1,as.numeric(acr))
-  }
-  message("==========================================\n")
-  message("Installing required R dependency package...\n")
+  while(!isOk){
+    message("Trying in install the required R:ggplot2 package. Confirm? (y/n)")
+    ANSWER <- readLines(con="stdin", 1)
+    if (tolower(substr(ANSWER, 1,1)) == "y" ) {
+      isOk = TRUE
+      message("Confirmed to install.")
+      message(" ")
+      message("==========================================\n")
+      message("Installing required R dependency package...\n")
 
-  # install the required package if not present from the default package repository
-  install.packages("ggplot2", repos="http://cran.rstudio.com/")
-  message("Installation  finished!\n")
-  message("==========================================\n")
+      # install the required package if not present from the default package repository
+      install.packages("ggplot2", repos="http://cran.rstudio.com/")
+      message("Installation  finished!\n")
+      message("==========================================\n")
+    }
+    else {
+      isOk = FALSE
+      message("You did not say yes, so aborting.")
+      return(-1)
+    }
+  }
 }
+
+
 out <- tryCatch(
                 {
                   require(ggplot2)
@@ -24,7 +37,7 @@ out <- tryCatch(
                   dat.n <- aggregate(ExecTime ~ PluginName, data = dat, "sum")
                   dat.n <- dat.n[order(dat.n$ExecTime, decreasing = TRUE),]
                   dat.n <- dat.n[,2:1]
-                  write.table(dat.n, "results.csv", sep = "\t", col.names = FALSE, row.names = FALSE)
+                  write.table(dat.n, "results.csv", sep = "\t", row.names = FALSE)
 
                 },
                 error=function(cond) {
