@@ -1,4 +1,5 @@
 #! /bin/bash
+set -eu
 
 echo "Generating vim startup profile..."
 logfile="vim.log"
@@ -20,7 +21,12 @@ paste tmp1.log tmp2.log |sed 's/\s\+/,/g' > profile.csv
 rm tmp.log tmp1.log tmp2.log
 
 echo "Crunching data and generating profile plot ..."
-R -q -f "vim-plugins-profile-plot.R" > /dev/null 2>&1
+R --vanilla --quiet --slave --file="vim-plugins-profile-plot.R"
+#R -q -f "vim-plugins-profile-plot.R" > /dev/null 2>&1
+
+rm profile.csv
+
+# we use result.csv, which is saved from R
 
 echo " "
 echo 'Your plugins startup profile graph is saved '
