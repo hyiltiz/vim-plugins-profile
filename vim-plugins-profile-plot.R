@@ -38,7 +38,7 @@ out <- tryCatch(
                   dat.n <- aggregate(ExecTime ~ PluginName, data = dat, "sum")
                   dat.n <- dat.n[order(dat.n$ExecTime, decreasing = TRUE),]
                   dat.n <- dat.n[,2:1]
-                  write.table(dat.n, "results.csv", sep = "\t", row.names = FALSE)
+                  write.table(dat.n, "result.csv", sep = "\t", row.names = FALSE)
 
                 },
                 error=function(cond) {
