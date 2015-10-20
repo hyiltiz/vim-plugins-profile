@@ -11,6 +11,25 @@ fi
 
 vim --startuptime $logfile -c q
 
+
+echo 'Assuming your vimfiles folder as `~/.vim/`'
+vimfilesDir="$HOME/.vim/"
+
+whichPlugin=""
+if [ -d "${vimfilesDir}plugged" ]; then
+  echo "vim-plug has been detected."
+  whichPlugin="plugged"
+elif [ -d ${vimfilesDir}bundle ]; then
+  echo "NeoBundle/Vundle/Pathogen has been detected."
+  whichPlugin="bundle"
+else
+  echo "Cannot tell your plugin-manager. Adjust this bash script\n"
+  echo "to meet your own needs for now."
+  echo 'Cue: `whichPlugin` variable would be a good starting place.'
+  return
+fi
+
+
 whichPlugin="plugged"
 
 echo "Parsing vim startup profile..."
@@ -18,7 +37,7 @@ grep 'plugged' vim.log > tmp.log
 awk -F\: '{print $1}' tmp.log > tmp1.log
 awk -F\: '{print $2}' tmp.log | awk -F\: '{print $2}' tmp.log | sed "s/.*${whichPlugin}\///g"|sed 's/\/.*//g' > tmp2.log
 paste tmp1.log tmp2.log |sed 's/\s\+/,/g' > profile.csv
-rm tmp.log tmp1.log tmp2.log
+rm tmp.log tmp1.log tmp2.log vim.log
 
 echo "Crunching data and generating profile plot ..."
 

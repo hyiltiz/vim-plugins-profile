@@ -30,12 +30,13 @@ Top 10 Plugins That Slows Down Vim Startup
 Done!    
 ```
 
+## Story
 
-If you use [vim-plug] to install your vim (gvim or macvim) plugins, then
-chances are high that it gets addictive. You will find yourself with
-several dozens of useful plugins. 
+If you use vim-plug (or other amazing plugin manager of your choice) to install
+your vim (gvim or macvim) plugins, then chances are high that it gets
+addictive. You will find yourself with several dozens of useful plugins. 
 
-[vim-plug] offers you to load your plugins on-demand (lazy-loading). But
+vim-plug (and NeoBundle) offers you to load your plugins on-demand (lazy-loading). But
 which needs fine tuning? Well, using vim's built-in profiling `vim
 --startuptime` you can get a timing for all function calls during
 startup. However, the data is for each functions. You will have to
@@ -50,7 +51,7 @@ of a simple bash script and R, we can get all we want.
 ### Installation
 
 This is *NOT* a vim plugin! This is simply a profiler for your vim
-plugins that are installed through [vim-plug].
+plugins that are installed through vim-plug.
 
 Download the `.zip` [here][zip] and then simply run the bash script:
 
@@ -61,12 +62,23 @@ sh ./vim-plugins-profile.sh
 
 Then open the `profile.png` file for the result! It is that simple.
 
+### Supported Plugin-Managers
+
+Here is the list of supported managers. Hopefully, your favourite plugin manager is among the list. If not, or if you prefer to manage your own plguins (using symlinks, of course), we could still adjust the code.
+
+ - [vim-plug]
+ - [NeoBundle]
+ - [Vundle]
+ - [Pathogen]
+
+
+
 ### Dependency
 
 You will need to install several tools before you can run this. Chances are that you already have them. The script prompts whether it should install the `R:ggplot2` package if you already have `R`. Here are the list of dependencies:
 
- - R
- - R:ggplot2 (the ggplot2 package for R)
+ - [R]
+ - [R:ggplot2] (the ggplot2 package for R)
  - Bash (Cygwin, or Git for Windows will also work)
 
 ### TODO
@@ -78,3 +90,8 @@ them but we can make a small switch that asks you which plugin you have
 
 [zip]: https://github.com/hyiltiz/vim-plugins-profile/archive/master.zip
 [vim-plug]: https://github.com/junegunn/vim-plug
+[R]: https://cran.r-project.org/
+[R:ggplot2]: http://ggplot2.org/
+[NeoBundle]: https://github.com/Shougo/neobundle.vim
+[Vundle]: https://github.com/VundleVim/Vundle.vim
+[Pathogen]: https://github.com/tpope/vim-pathogen
