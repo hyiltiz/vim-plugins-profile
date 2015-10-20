@@ -48,6 +48,17 @@ plugins (but not the functions) that you really care about.
 I am poor at doing mental math, even for simple sums. However, with the power
 of a simple bash script and R, we can get all we want.
 
+
+### Supported Plugin-Managers
+
+Here is the list of supported managers. Hopefully, your favourite plugin manager is among the list. If not, or if you prefer to manage your own plguins (using symlinks, of course), we could still adjust the code.
+
+ - [vim-plug]
+ - [NeoBundle]
+ - [Vundle]
+ - [Pathogen]
+
+
 ### Installation
 
 This is *NOT* a vim plugin! This is simply a profiler for your vim
@@ -61,16 +72,6 @@ sh ./vim-plugins-profile.sh
 ```
 
 Then open the `profile.png` file for the result! It is that simple.
-
-### Supported Plugin-Managers
-
-Here is the list of supported managers. Hopefully, your favourite plugin manager is among the list. If not, or if you prefer to manage your own plguins (using symlinks, of course), we could still adjust the code.
-
- - [vim-plug]
- - [NeoBundle]
- - [Vundle]
- - [Pathogen]
-
 
 
 ### Dependency
