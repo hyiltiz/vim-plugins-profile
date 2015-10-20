@@ -83,10 +83,7 @@ You will need to install several tools before you can run this. Chances are that
 
 ### TODO
 
-It is very easy to adjust this script to profile your vim plugins that
-are installed through Vundle, NeoBundle, Pathogen etc. I do not have
-them but we can make a small switch that asks you which plugin you have
-(or simply auto-detect).
+- Maybe optionally use `gnuplot` or `matplotlib` instead of `R:ggplot2` if any of the other two are installed already. 
 
 [zip]: https://github.com/hyiltiz/vim-plugins-profile/archive/master.zip
 [vim-plug]: https://github.com/junegunn/vim-plug
