@@ -30,8 +30,9 @@ out <- tryCatch(
                 {
                   require(ggplot2)
                   dat <- read.csv("profile.csv", header = FALSE, col.names = c("TraceTime", "SourceTime", "ExecTime", "PluginName"))
-                  png("profile.png", width = 1366, height = 768)
-                  qplot(PluginName, ExecTime, data = dat, stat = "summary", fun.y = "sum", geom = "bar") + coord_flip() + xlab("Installed Plugins") + ylab("Startup Time (ms)")
+                  png("result.png", width = 1366, height = 768)
+                  p <- qplot(PluginName, ExecTime, data = dat, stat = "summary", fun.y = "sum", geom = "bar") + coord_flip() + xlab("Installed Plugins") + ylab("Startup Time (ms)")
+                  print(p)
                   dev.off()
 
                   dat.n <- aggregate(ExecTime ~ PluginName, data = dat, "sum")
@@ -61,4 +62,4 @@ out <- tryCatch(
 
                   # Do nothing
                 }
-                )    
+                )
