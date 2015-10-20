@@ -13,7 +13,7 @@ if("ggplot2" %in% rownames(installed.packages()) == FALSE) {
       message("Installing required R dependency package...\n")
 
       # install the required package if not present from the default package repository
-      install.packages("ggplot2", repos="http://cran.rstudio.com/")
+      install.packages("ggplot2", repos="http://cran.rstudio.com/", dep = TRUE)
       message("Installation  finished!\n")
       message("==========================================\n")
     }
@@ -30,12 +30,24 @@ out <- tryCatch(
                 {
                   require(ggplot2)
                   dat <- read.csv("profile.csv", header = FALSE, col.names = c("TraceTime", "SourceTime", "ExecTime", "PluginName"))
-                  png("result.png", width = 1366, height = 768)
-                  p <- qplot(PluginName, ExecTime, data = dat, stat = "summary", fun.y = "sum", geom = "bar") + coord_flip() + xlab("Installed Plugins") + ylab("Startup Time (ms)")
+                  dat.n <- aggregate(ExecTime ~ PluginName, data = dat, "sum")
+                  png("result.png", width = 768, height = 768, bg = "transparent")
+                  
+                  # now plot!
+                  p <- ggplot(dat.n, aes(x = PluginName, y = ExecTime, fill = ExecTime)) + 
+                    geom_bar(stat="identity") + 
+                    coord_flip()
+                  
+                  # add in the colors!
+                  p <- p + scale_fill_continuous(low = "blue", high = "red", na.value = "grey50", trans = "sqrt", guide= FALSE)
+                  
+                  # use this if you hate colors to get grey figure
+                  # p <- p + scale_fill_continuous(low = "grey50", high = "grey50", na.value = "grey50", trans = "sqrt", guide= FALSE)
+                  
                   print(p)
                   dev.off()
 
-                  dat.n <- aggregate(ExecTime ~ PluginName, data = dat, "sum")
+                  # sort the data, then save .csv for the result
                   dat.n <- dat.n[order(dat.n$ExecTime, decreasing = TRUE),]
                   dat.n <- dat.n[,2:1]
                   write.table(dat.n, "result.csv", sep = "\t", row.names = FALSE)
