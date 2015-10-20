@@ -65,7 +65,7 @@ echo " "
 echo "=========================================="
 echo "Top 10 Plugins That Slows Down Vim Startup"
 echo "=========================================="
-cat -n results.csv |head -n 10 # change this 10 to see more in this `Top List`
+cat -n result.csv |head -n 10 # change this 10 to see more in this `Top List`
 echo "=========================================="
 
 echo "Done!"
