@@ -30,14 +30,14 @@ out <- tryCatch(
                 {
                   require(ggplot2)
                   dat <- read.csv("profile.csv", header = FALSE, col.names = c("TraceTime", "SourceTime", "ExecTime", "PluginName"))
-                  png("result.png", width = 1366, height = 768)
                   p <- qplot(PluginName, ExecTime, data = dat, stat = "summary", fun.y = "sum", geom = "bar") + coord_flip() + xlab("Installed Plugins") + ylab("Startup Time (ms)")
-                  print(p)
-                  dev.off()
 
                   dat.n <- aggregate(ExecTime ~ PluginName, data = dat, "sum")
                   dat.n <- dat.n[order(dat.n$ExecTime, decreasing = TRUE),]
                   dat.n <- dat.n[,2:1]
+                  png("result.png", width = 1366, height = 768)
+                  print(p)
+                  dev.off()
                   write.table(dat.n, "result.csv", sep = "\t", row.names = FALSE)
 
                 },
