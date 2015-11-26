@@ -33,11 +33,12 @@ fi
 
 echo "Parsing vim startup profile..."
 #logfile=hi.log
-grep 'plugged' $logfile > tmp.log
+grep $plugDir $logfile > tmp.log
 awk -F\: '{print $1}' tmp.log > tmp1.log
 awk -F\: '{print $2}' tmp.log | awk -F\: '{print $2}' tmp.log | sed "s/.*${plugDir}\///g"|sed 's/\/.*//g' > tmp2.log
 paste -d ',' tmp1.log tmp2.log | tr -s ' ' ',' > profile.csv
-rm tmp.log tmp1.log tmp2.log $logfile
+rm tmp.log tmp1.log tmp2.log
+#rm $logfile
 
 
 
