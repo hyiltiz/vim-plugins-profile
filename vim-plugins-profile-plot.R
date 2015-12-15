@@ -31,7 +31,6 @@ out <- tryCatch(
                   require(ggplot2)
                   dat <- read.csv("profile.csv", header = FALSE, col.names = c("TraceTime", "SourceTime", "ExecTime", "PluginName"))
                   dat.n <- aggregate(ExecTime ~ PluginName, data = dat, "sum")
-                  png("result.png", width = 768, height = 768, bg = "transparent")
                   
                   # now plot!
                   p <- ggplot(dat.n, aes(x = PluginName, y = ExecTime, fill = ExecTime)) + 
@@ -44,12 +43,22 @@ out <- tryCatch(
                   # use this if you hate colors to get grey figure
                   # p <- p + scale_fill_continuous(low = "grey50", high = "grey50", na.value = "grey50", trans = "sqrt", guide= FALSE)
                   
+                  png("result.png", width = 768, height = 768, bg = "transparent")
+                  print(p)
+                  dev.off()
+                  pdf("result.pdf", width = 768, height = 768, bg = "transparent")
+                  print(p)
+                  dev.off()
+                  svg("result.svg", width = 768, height = 768, bg = "transparent")
                   print(p)
                   dev.off()
 
                   # sort the data, then save .csv for the result
                   dat.n <- dat.n[order(dat.n$ExecTime, decreasing = TRUE),]
                   dat.n <- dat.n[,2:1]
+                  png("result.png", width = 1366, height = 768)
+                  print(p)
+                  dev.off()
                   write.table(dat.n, "result.csv", sep = "\t", row.names = FALSE)
 
                 },
