@@ -26,7 +26,7 @@ else
   echo "Cannot tell your plugin-manager. Adjust this bash script\n"
   echo "to meet your own needs for now."
   echo 'Cue: `plugDir` variable would be a good starting place.'
-  return
+  exit 1
 fi
 
 
