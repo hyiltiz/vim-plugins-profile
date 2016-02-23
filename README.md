@@ -69,6 +69,7 @@ Download the `.zip` [here][zip] and then simply run the bash script:
 
 ```BASH
 sh ./vim-plugins-profile.sh
+ruby ./vim-plugins-profile.rb #alternatively use Ruby powers!
 ```
 
 Then open the `profile.png` file for the result! It is that simple.
@@ -81,6 +82,8 @@ You will need to install several tools before you can run this. Chances are that
  - [R]
  - [R:ggplot2] (the ggplot2 package for R)
  - Bash (Cygwin, or Git for Windows will also work)
+
+Alternatively, you could use `Ruby` for the same analysis. It does not depend on extra libraries, but will not produce eye-candy graphs either.
 
 ### TODO
 
