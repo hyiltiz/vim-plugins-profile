@@ -9,7 +9,11 @@ if [ -f $logfile ]; then
   rm $logfile
 fi
 
-vim --startuptime $logfile -c q
+if [[ $# -eq 0 ]]; then
+  vim --startuptime $logfile -c q
+else
+  vim --startuptime $logfile $1
+fi
 
 
 echo 'Assuming your vimfiles folder as `~/.vim/`'
@@ -52,7 +56,8 @@ type R > /dev/null 2>&1 || { echo >&2 "Package R is required but it's not instal
 
 
 # Still here? Great! Let's move on!
-R --vanilla --quiet --slave --file="vim-plugins-profile-plot.R"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+R --vanilla --quiet --slave --file="$DIR/vim-plugins-profile-plot.R"
 #R --vanilla --file="vim-plugins-profile-plot.R"  # or use this for debugging
 
 # we use result.csv, which is saved from R
