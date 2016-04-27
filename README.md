@@ -70,7 +70,9 @@ Download the `.zip` [here][zip] and then simply run the bash script:
 
 ```BASH
 sh ./vim-plugins-profile.sh
-ruby ./vim-plugins-profile.rb #alternatively use Ruby powers!
+
+# Alternatively use Ruby powers! Less dependency, graph with ASCII art
+ruby ./vim-plugins-profile.rb
 ```
 
 Then open the `profile.png` file for the result! It is that simple.
