@@ -35,6 +35,7 @@ out <- tryCatch(
                   # now plot!
                   p <- ggplot(dat.n, aes(x = PluginName, y = ExecTime, fill = ExecTime)) + 
                     geom_bar(stat="identity") + 
+                    xlab("Total Execution Time (ms)")
                     coord_flip()
                   
                   # add in the colors!
