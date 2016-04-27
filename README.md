@@ -62,14 +62,17 @@ Here is the list of supported managers. Hopefully, your favourite plugin manager
 ### Installation
 
 This is *NOT* a vim plugin! This is simply a profiler for your vim
-plugins that are installed through vim-plug.
+plugins that are installed through various plugin managers such as
+vim-plug.
 
 Download the `.zip` [here][zip] and then simply run the bash script:
 
 
 ```BASH
 sh ./vim-plugins-profile.sh
-ruby ./vim-plugins-profile.rb #alternatively use Ruby powers!
+
+# Alternatively use Ruby powers! Less dependency, graph with ASCII art
+ruby ./vim-plugins-profile.rb
 ```
 
 Then open the `profile.png` file for the result! It is that simple.
