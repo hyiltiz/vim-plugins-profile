@@ -1,6 +1,12 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
+# detect Ruby version
+if RUBY_VERSION < "2.1"
+    puts "vim-plugins-profile requires Ruby >= 2.1."
+    exit!
+end
+
 PLOT_WIDTH = 120
 LOG = "vim-plugins-profile.#{$$}.log"
 
