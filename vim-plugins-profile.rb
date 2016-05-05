@@ -1,12 +1,6 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
-# detect Ruby version
-if RUBY_VERSION < "2.1"
-    puts "vim-plugins-profile requires Ruby >= 2.1."
-    exit!
-end
-
 PLOT_WIDTH = 120
 LOG = "vim-plugins-profile.#{$$}.log"
 
@@ -48,7 +42,7 @@ relatives = exec_times_by_name.reduce({}) do |hash, (name, time)|
 end
 max_name_length = relatives.keys.map(&:length).max
 puts
-relatives.sort_by { |k, v| -v }.to_h.each do |name, rel_time|
+Hash[ relatives.sort_by { |k, v| -v } ].each do |name, rel_time|
   time = exec_times_by_name[name]
   puts "#{name.rjust(max_name_length)}: (#{time.round(3).to_s.ljust(5)}ms) #{'*' * (rel_time*PLOT_WIDTH)}"
 end
