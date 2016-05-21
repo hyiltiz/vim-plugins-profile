@@ -1,14 +1,19 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
+# Users can pass "nvim" as a first argument to use neovim.
+vim = ARGV.shift
+vim ||= "vim"
+puts "Testing #{vim} performance..."
+
 PLOT_WIDTH = 120
 LOG = "vim-plugins-profile.#{$$}.log"
 
-puts 'Assuming your vimfiles folder as `~/.vim/`'
-VIMFILES_DIR = File.join(ENV['HOME'], '.vim')
+VIMFILES_DIR = vim == "nvim" ? File.join(ENV['XDG_CONFIG_HOME'], 'nvim') : File.join(ENV['HOME'], '.vim')
+puts "Assuming your vimfiles folder is #{VIMFILES_DIR}."
 
-puts "Generating vim startup profile..."
-system('vim', '--startuptime', LOG, '-c', 'q')
+puts "Generating #{vim} startup profile..."
+system(vim, '--startuptime', LOG, '-c', 'q')
 
 # detect plugin manager
 plug_dir=""
