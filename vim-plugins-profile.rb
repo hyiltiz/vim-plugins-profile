@@ -2,8 +2,7 @@
 # encoding: utf-8
 
 # Users can pass "nvim" as a first argument to use neovim.
-vim = ARGV.shift
-vim ||= "vim"
+vim = ARGV.first || 'vim'
 puts "Testing #{vim} performance..."
 
 PLOT_WIDTH = 120
