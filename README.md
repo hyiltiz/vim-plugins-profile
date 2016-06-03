@@ -73,6 +73,9 @@ sh ./vim-plugins-profile.sh
 
 # Alternatively use Ruby powers! Less dependency, graph with ASCII art
 ruby ./vim-plugins-profile.rb
+
+# To use an alternative executable such as neovim, pass it as the first argument.
+ruby ./vim-plugins-profile.rb nvim
 ```
 
 Then open the `profile.png` file for the result! It is that simple.
