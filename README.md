@@ -32,11 +32,11 @@ Done!
 
 ## Story
 
-If you use vim-plug (or other amazing plugin manager of your choice) to install
+If you use `vim-plug` (or other amazing plugin manager of your choice) to install
 your vim (gvim or macvim) plugins, then chances are high that it gets
 addictive. You will find yourself with several dozens of useful plugins. 
 
-vim-plug (and NeoBundle) offers you to load your plugins on-demand (lazy-loading). But
+`vim-plug` (and `NeoBundle`) offers you to load your plugins on-demand (lazy-loading). But
 which needs fine tuning? Well, using vim's built-in profiling `vim
 --startuptime` you can get a timing for all function calls during
 startup. However, the data is for each functions. You will have to
@@ -46,7 +46,7 @@ each functions does not really make sense because it is really time of the
 plugins (but not the functions) that you really care about.  
 
 I am poor at doing mental math, even for simple sums. However, with the power
-of a simple bash script and R, we can get all we want.
+of a simple bash script and `R`, we can get all we want.
 
 
 ### Supported Plugin-Managers
@@ -63,7 +63,7 @@ Here is the list of supported managers. Hopefully, your favourite plugin manager
 
 This is *NOT* a vim plugin! This is simply a profiler for your vim
 plugins that are installed through various plugin managers such as
-vim-plug.
+`vim-plug`.
 
 Download the `.zip` [here][zip] and then simply run the bash script:
 
