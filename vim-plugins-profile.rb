@@ -8,7 +8,9 @@ puts "Testing #{vim} performance..."
 PLOT_WIDTH = 120
 LOG = "vim-plugins-profile.#{$$}.log"
 
-VIMFILES_DIR = vim == "nvim" ? File.join(ENV['XDG_CONFIG_HOME'], 'nvim') : File.join(ENV['HOME'], '.vim')
+XDG_CONFIG_HOME = ENV['XDG_CONFIG_HOME'] || File.join(ENV['HOME'], '.config')
+
+VIMFILES_DIR = vim == "nvim" ? File.join(XDG_CONFIG_HOME, 'nvim') : File.join(ENV['HOME'], '.vim')
 puts "Assuming your vimfiles folder is #{VIMFILES_DIR}."
 
 puts "Generating #{vim} startup profile..."
