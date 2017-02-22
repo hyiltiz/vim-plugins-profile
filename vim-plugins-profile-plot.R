@@ -1,3 +1,7 @@
+# vim-plugins-profile project data parser and plotter script
+# Copyright 2015-2017, Hörmet Yiltiz <hyiltiz@github.com>
+# Released under GNU GPL version 3 or later.
+
 if("ggplot2" %in% rownames(installed.packages()) == FALSE) {
 
   isOk <- FALSE
