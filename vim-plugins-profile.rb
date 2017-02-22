@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
+# Copyright 2015-2017, Hörmet Yiltiz <hyiltiz@github.com>
+# Released under GNU GPL version 3 or later.
+
 # Users can pass "nvim" as a first argument to use neovim.
 vim = ARGV.first || 'vim'
 puts "Testing #{vim} performance..."
