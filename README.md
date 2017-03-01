@@ -69,7 +69,7 @@ Download the `.zip` [here][zip] and then simply run the bash script:
 
 
 ```BASH
-sh ./vim-plugins-profile.sh
+bash ./vim-plugins-profile.sh
 
 # Alternatively use Ruby powers! Less dependency, graph with ASCII art
 ruby ./vim-plugins-profile.rb
