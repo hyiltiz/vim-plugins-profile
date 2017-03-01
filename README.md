@@ -83,13 +83,18 @@ Then open the `profile.png` file for the result! It is that simple.
 
 ### Dependency
 
-You will need to install several tools before you can run this. Chances are that you already have them. The script prompts whether it should install the `R:ggplot2` package if you already have `R`. Here are the list of dependencies:
+*Nothing*. Well, at least `Bash` and `Ruby`, but most systems already comes with those pre-installed already.
+
+If not (e.g. in M$ Windows systems), then you will need to install several tools before you can run this. 
+
+ - Bash (Cygwin, or Git for Windows will also work)
+ - Ruby 2.3 (other version might as well just work. If not, you can repurt an Issue then I'll fix it)
+ 
+To produce the eye-candy graphs, you will need to use `R`. The script prompts whether it should install the `R:ggplot2` package if you already have `R`. Here are the list of dependencies for it:
 
  - [R]
  - [R:ggplot2] (the ggplot2 package for R)
- - Bash (Cygwin, or Git for Windows will also work)
 
-Alternatively, you could use `Ruby` for the same analysis. It does not depend on extra libraries, but will not produce eye-candy graphs either.
 
 ### TODO
 
