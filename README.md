@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/hyiltiz/vim-plugins-profile.svg?branch=master)](https://travis-ci.org/hyiltiz/vim-plugins-profile)
 Here is a screenshot to have a quick look at what this is all about.
 
 ![My Plugins Profile](./test/result.png)
