@@ -48,6 +48,8 @@ plugins (but not the functions) that you really care about.
 I am poor at doing mental math, even for simple sums. However, with the power
 of a simple bash script and `R`, we can get all we want.
 
+This utility automatically detects your plugins directory, and does the
+rest of the hard work for you.
 
 ### Supported Plugin-Managers
 
@@ -74,6 +76,10 @@ bash ./vim-plugins-profile.sh
 # Alternatively use Ruby powers! Less dependency, graph with ASCII art
 ruby ./vim-plugins-profile.rb
 
+# Or python if you are from the other camp.
+vim-profiler.py 
+vim-profiler.py -p # plot a bar chart
+
 # To use an alternative executable such as neovim, pass it as the first argument.
 ruby ./vim-plugins-profile.rb nvim
 ```
@@ -85,15 +91,21 @@ Then open the `profile.png` file for the result! It is that simple.
 
 *Nothing*. Well, at least `Bash` and `Ruby`, but most systems already comes with those pre-installed already.
 
-If not (e.g. in M$ Windows systems), then you will need to install several tools before you can run this. 
+If not (e.g. in M\$ Windows systems), then you will need to install several tools before you can run this. 
 
  - Bash (Cygwin, or Git for Windows will also work)
  - Ruby 2.3 (other version might as well just work. If not, you can repurt an Issue then I'll fix it)
  
-To produce the eye-candy graphs, you will need to use `R`. The script prompts whether it should install the `R:ggplot2` package if you already have `R`. Here are the list of dependencies for it:
+To produce the eye-candy graphs, you can use either `R` or `Python`. 
+
+For `R`, the script prompts whether it should install the `R:ggplot2` package if you already have `R`. Here are the list of dependencies for it:
 
  - [R]
  - [R:ggplot2] (the ggplot2 package for R)
+
+For `Python`, you can use either `python2` or `python3`. If you have
+`matplotlib` (optional) installed, then you can even generate the bar plot.
+Implementation for people from the python camp is merged from [@bchretien](https://github.com/bchretien/vim-profiler). It also supports a custom command to run in the exec mode. Feel free to hack your way!
 
 
 ### TODO
