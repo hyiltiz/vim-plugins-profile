@@ -1,6 +1,6 @@
 set nocompatible
 
-call plug#begin('/tmp/plugged')
+call plug#begin('~/.vim/plugged')
 
 " Add a bunch of random plugins
 Plug 'tpope/vim-surround'
