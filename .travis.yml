@@ -10,6 +10,7 @@ addons:
     packages:
       - vim
       - ruby
+      - r-cran-ggplot2
 
 branches:
   only:
@@ -32,3 +33,4 @@ script:
   - python ./vim-plugins-profile.py -n 5 -r 10 vim -u .travis/vimrc
   - python ./vim-plugins-profile.py -s vim -N -u NORC
   - ruby ./vim-plugins-profile.rb
+  - yes | bash vim-plugins-profile.sh
