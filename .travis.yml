@@ -15,9 +15,9 @@ addons:
     packages:
       - vim
       - ruby
-      - r-base 
-      - r-base-dev
       - python-matplotlib
+      #      - r-base 
+      #      - r-base-dev
 
 branches:
   only:
@@ -33,6 +33,13 @@ install:
 before_script:
   - mkdir -p ~/R/library
   - export R_LIBS_USER="~/R/library/"
+
+cache:
+  directories:
+    - $TRAVIS_BUILD_DIR/packrat/src
+    - $TRAVIS_BUILD_DIR/packrat/lib
+    - $R_LIBS_USER
+  packages: true
 
 script:
   - vim --version

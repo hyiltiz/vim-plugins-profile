@@ -17,7 +17,7 @@ if("ggplot2" %in% rownames(installed.packages()) == FALSE) {
       message("Installing required R dependency package...\n")
 
       # install the required package if not present from the default package repository
-      install.packages("ggplot2", repos="http://cran.rstudio.com/", dep = TRUE, verbose=TRUE)
+      install.packages("ggplot2", repos="http://cran.rstudio.com/", dep = TRUE)
       message("Installation  finished!\n")
       message("==========================================\n")
     }
