@@ -3,6 +3,11 @@ python:
   - "2.7"
   - "3.5"
 
+branches:
+  only:
+  - master
+  - develop
+
 sudo: false
 
 addons:
