@@ -79,8 +79,8 @@ bash ./vim-plugins-profile.sh
 ruby ./vim-plugins-profile.rb
 
 # Or python if you are from the other camp.
-vim-profiler.py 
-vim-profiler.py -p # plot a bar chart
+python vim-profiler.py 
+python vim-profiler.py -p # plot a bar chart
 
 # To use an alternative executable such as neovim, pass it as the first argument.
 ruby ./vim-plugins-profile.rb nvim
