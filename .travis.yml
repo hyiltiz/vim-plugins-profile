@@ -1,7 +1,7 @@
-language: python
-python:
-  - "2.7"
-  - "3.5"
+language: r
+r:
+  - release
+  - devel
 
 branches:
   only:
@@ -17,6 +17,8 @@ addons:
       - ruby
       - r-base 
       - r-base-dev
+      - python-matplotlib
+      - python3-matplotlib
 
 branches:
   only:
