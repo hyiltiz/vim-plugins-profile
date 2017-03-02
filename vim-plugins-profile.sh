@@ -63,8 +63,8 @@ type R > /dev/null 2>&1 || { echo >&2 "Package R is required but it's not instal
 
 # Still here? Great! Let's move on!
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-#R --vanilla --quiet --slave --file="$DIR/vim-plugins-profile-plot.R"
-R --vanilla --file="vim-plugins-profile-plot.R"  # or use this for debugging
+R --vanilla --quiet --slave --file="$DIR/vim-plugins-profile-plot.R"
+#R --vanilla --file="vim-plugins-profile-plot.R"  # or use this for debugging
 
 # we use result.csv, which is saved from R
 # delete profile.csv since it is used to feed into R
