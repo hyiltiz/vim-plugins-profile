@@ -24,7 +24,7 @@ install:
 script:
   - pwd
   - find .
-  - find ~
+  - find ~/.vim*
   - vim --version
   - python ./vim-plugins-profile.py vim -u NONE
   - python ./vim-plugins-profile.py vim -u .travis/vimrc
