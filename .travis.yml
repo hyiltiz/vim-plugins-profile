@@ -23,10 +23,10 @@ install:
   - vim -u .travis/vimrc +PlugInstall +qall
 
 script:
-  - pwd
-  - find .
-  - find ~/.vim*
   - vim --version
+  - python --version
+  - ruby --version
+  - R --version
   - python ./vim-plugins-profile.py vim -u NONE
   - python ./vim-plugins-profile.py vim -u .travis/vimrc
   - python ./vim-plugins-profile.py -n 5 vim -u .travis/vimrc
