@@ -22,8 +22,8 @@ install:
 
 script:
   - vim --version
-  - python ./vim-profiler.py vim -u NONE
-  - python ./vim-profiler.py vim -u .travis/vimrc
-  - python ./vim-profiler.py -n 5 vim -u .travis/vimrc
-  - python ./vim-profiler.py -n 5 -r 10 vim -u .travis/vimrc
-  - python ./vim-profiler.py -s vim -N -u NORC
+  - python ./vim-plugins-profile.py vim -u NONE
+  - python ./vim-plugins-profile.py vim -u .travis/vimrc
+  - python ./vim-plugins-profile.py -n 5 vim -u .travis/vimrc
+  - python ./vim-plugins-profile.py -n 5 -r 10 vim -u .travis/vimrc
+  - python ./vim-plugins-profile.py -s vim -N -u NORC
