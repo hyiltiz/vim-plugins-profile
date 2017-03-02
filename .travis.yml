@@ -29,7 +29,7 @@ install:
   - cp .travis/vimrc ~/.vimrc
   - vim -u ~/.vimrc +PlugInstall +qall
   - mkdir -p ~/R/library
-  - export R_LIBS_USER="~/R/library"
+  - export R_LIBS_USER="~/R/library/"
 
 script:
   - vim --version
