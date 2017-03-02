@@ -91,7 +91,7 @@ Then open the `profile.png` file for the result! It is that simple.
 
 ### Dependency
 
-*Nothing*. Well, at least `Bash` and `Ruby`, but most systems already comes with those pre-installed already.
+*Nothing*. Well, at least `Bash` or `Ruby` or `Python`, but most systems already comes with all those pre-installed already.
 
 If not (e.g. in M\$ Windows systems), then you will need to install several tools before you can run this. 
 
