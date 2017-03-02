@@ -33,6 +33,7 @@ script:
   - python --version
   - ruby --version
   - R --version
+  - ln -s .travis/vimrc ~/.vimrc
   - python ./vim-plugins-profile.py vim -u NONE
   - python ./vim-plugins-profile.py vim -u .travis/vimrc
   - python ./vim-plugins-profile.py -n 5 vim -u .travis/vimrc
