@@ -10,7 +10,8 @@ addons:
     packages:
       - vim
       - ruby
-      - r-cran-ggplot2
+      - r-base 
+      - r-base-dev
 
 branches:
   only:
