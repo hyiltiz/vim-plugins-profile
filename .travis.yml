@@ -28,6 +28,8 @@ install:
   - curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   - cp .travis/vimrc ~/.vimrc
   - vim -u ~/.vimrc +PlugInstall +qall
+  - mkdir ~/R/library
+  - export -g R_LIBS_USER="~/R/library"
 
 script:
   - vim --version
