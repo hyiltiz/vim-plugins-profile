@@ -53,5 +53,5 @@ script:
   - python ./vim-plugins-profile.py -s vim -N -u NORC
   - ruby ./vim-plugins-profile.rb
   - yes | bash vim-plugins-profile.sh
-  - find ~/R/
-  - ls -laR ~/R/
+  #- find ~/R/
+  #- ls -laR ~/R/
