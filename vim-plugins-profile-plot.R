@@ -2,7 +2,7 @@
 # Copyright 2015-2017, Hörmet Yiltiz <hyiltiz@github.com>
 # Released under GNU GPL version 3 or later.
 
-if("jggplot2" %in% rownames(installed.packages()) == FALSE) {
+if("ggplot2" %in% rownames(installed.packages()) == FALSE) {
 
   isOk <- FALSE
   # we need to install the ggplot2 package
@@ -17,7 +17,7 @@ if("jggplot2" %in% rownames(installed.packages()) == FALSE) {
       message("Installing required R dependency package...\n")
 
       # install the required package if not present from the default package repository
-      #install.packages("ggplot2", repos="http://cran.rstudio.com/", dep = TRUE)
+      install.packages("ggplot2", repos="http://cran.rstudio.com/", dep = TRUE)
       message("Installation  finished!\n")
       message("==========================================\n")
     }

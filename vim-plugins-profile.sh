@@ -3,11 +3,8 @@
 # Copyright 2015-2017, Hörmet Yiltiz <hyiltiz@github.com>
 # Released under GNU GPL version 3 or later.
 
-
-
-
 set -eu
-set -x
+# set -x
 
 echo "Generating vim startup profile..."
 logfile="vim.log"
@@ -44,9 +41,8 @@ fi
 
 
 echo "Parsing vim startup profile..."
-#logfile=hi.log
-ls
-cat $logfile
+# logfile=hi.log
+# cat $logfile
 grep $plugDir $logfile > tmp.log
 awk -F\: '{print $1}' tmp.log > tmp1.log
 awk -F\: '{print $2}' tmp.log | awk -F\: '{print $2}' tmp.log | sed "s/.*${plugDir}\///g"|sed 's/\/.*//g' > tmp2.log
