@@ -9,6 +9,7 @@ addons:
   apt:
     packages:
       - vim
+      - ruby
 
 branches:
   only:
@@ -27,3 +28,4 @@ script:
   - python ./vim-plugins-profile.py -n 5 vim -u .travis/vimrc
   - python ./vim-plugins-profile.py -n 5 -r 10 vim -u .travis/vimrc
   - python ./vim-plugins-profile.py -s vim -N -u NORC
+  - ruby ./vim-plugins-profile.ruby
