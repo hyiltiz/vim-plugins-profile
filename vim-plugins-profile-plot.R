@@ -20,6 +20,7 @@ if("ggplot2" %in% rownames(installed.packages()) == FALSE) {
       install.packages("ggplot2", repos="http://cran.rstudio.com/", dep = TRUE)
       message("Installation  finished!\n")
       message("==========================================\n")
+      list.files("~/R/library/")
     }
     else {
       isOk = FALSE
