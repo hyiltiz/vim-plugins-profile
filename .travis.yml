@@ -18,7 +18,6 @@ addons:
       - r-base 
       - r-base-dev
       - python-matplotlib
-      - python3-matplotlib
 
 branches:
   only:
