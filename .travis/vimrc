@@ -1,0 +1,18 @@
+set nocompatible
+
+call plug#begin('~/.vim/plugged')
+
+" Add a bunch of random plugins
+Plug 'tpope/vim-surround'
+Plug 'tomtom/tcomment_vim'
+Plug 'tpope/vim-fugitive'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'ervandew/supertab'
+Plug 'jiangmiao/auto-pairs'
+
+" UltiSnips requires Vim >= 7.4
+if v:version > 703
+  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+endif
+
+call plug#end()

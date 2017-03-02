@@ -1,4 +1,11 @@
 #! /bin/bash
+
+# Copyright 2015-2017, Hörmet Yiltiz <hyiltiz@github.com>
+# Released under GNU GPL version 3 or later.
+
+
+
+
 set -eu
 
 echo "Generating vim startup profile..."
@@ -9,7 +16,11 @@ if [ -f $logfile ]; then
   rm $logfile
 fi
 
-vim --startuptime $logfile -c q
+if [[ $# -eq 0 ]]; then
+  vim --startuptime $logfile -c q
+else
+  vim --startuptime $logfile $1
+fi
 
 
 echo 'Assuming your vimfiles folder as `~/.vim/`'
@@ -26,17 +37,19 @@ else
   echo "Cannot tell your plugin-manager. Adjust this bash script\n"
   echo "to meet your own needs for now."
   echo 'Cue: `plugDir` variable would be a good starting place.'
-  return
+  exit 1
 fi
 
 
 
 echo "Parsing vim startup profile..."
-grep 'plugged' $logfile > tmp.log
+#logfile=hi.log
+grep $plugDir $logfile > tmp.log
 awk -F\: '{print $1}' tmp.log > tmp1.log
 awk -F\: '{print $2}' tmp.log | awk -F\: '{print $2}' tmp.log | sed "s/.*${plugDir}\///g"|sed 's/\/.*//g' > tmp2.log
-paste tmp1.log tmp2.log |sed 's/\s\+/,/g' > profile.csv
-rm tmp.log tmp1.log tmp2.log $logfile
+paste -d ',' tmp1.log tmp2.log | tr -s ' ' ',' > profile.csv
+rm tmp.log tmp1.log tmp2.log
+rm $logfile
 
 
 
@@ -50,7 +63,8 @@ type R > /dev/null 2>&1 || { echo >&2 "Package R is required but it's not instal
 
 
 # Still here? Great! Let's move on!
-R --vanilla --quiet --slave --file="vim-plugins-profile-plot.R"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+R --vanilla --quiet --slave --file="$DIR/vim-plugins-profile-plot.R"
 #R --vanilla --file="vim-plugins-profile-plot.R"  # or use this for debugging
 
 # we use result.csv, which is saved from R
@@ -65,7 +79,7 @@ echo " "
 echo "=========================================="
 echo "Top 10 Plugins That Slows Down Vim Startup"
 echo "=========================================="
-cat -n results.csv |head -n 10 # change this 10 to see more in this `Top List`
+cat -n result.csv |head -n 10 # change this 10 to see more in this `Top List`
 echo "=========================================="
 
 echo "Done!"

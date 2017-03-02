@@ -1,0 +1,37 @@
+language: python
+python:
+  - "2.7"
+  - "3.5"
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - vim
+      - ruby
+      - r-base 
+      - r-base-dev
+
+branches:
+  only:
+    - master
+    - travis
+
+install:
+  # Install vim plugins
+  - curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  - vim -u .travis/vimrc +PlugInstall +qall
+
+script:
+  - vim --version
+  - python --version
+  - ruby --version
+  - R --version
+  - python ./vim-plugins-profile.py vim -u NONE
+  - python ./vim-plugins-profile.py vim -u .travis/vimrc
+  - python ./vim-plugins-profile.py -n 5 vim -u .travis/vimrc
+  - python ./vim-plugins-profile.py -n 5 -r 10 vim -u .travis/vimrc
+  - python ./vim-plugins-profile.py -s vim -N -u NORC
+  - ruby ./vim-plugins-profile.rb
+  - yes | bash vim-plugins-profile.sh

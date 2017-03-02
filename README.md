@@ -1,6 +1,8 @@
-Here is a Screenshot to have a quick look at what this is all about.
+[![Build Status](https://api.travis-ci.org/hyiltiz/vim-plugins-profile.svg?branch=master)](https://travis-ci.org/hyiltiz/vim-plugins-profile)
 
-![My Plugins Profile](./test/profile.png)
+Here is a screenshot to have a quick look at what this is all about.
+
+![My Plugins Profile](./test/result.png)
 
 Here is a peek at the profiling result for my plugins:
 
@@ -32,11 +34,11 @@ Done!
 
 ## Story
 
-If you use vim-plug (or other amazing plugin manager of your choice) to install
+If you use `vim-plug` (or other amazing plugin manager of your choice) to install
 your vim (gvim or macvim) plugins, then chances are high that it gets
 addictive. You will find yourself with several dozens of useful plugins. 
 
-vim-plug (and NeoBundle) offers you to load your plugins on-demand (lazy-loading). But
+`vim-plug` (and `NeoBundle`) offers you to load your plugins on-demand (lazy-loading). But
 which needs fine tuning? Well, using vim's built-in profiling `vim
 --startuptime` you can get a timing for all function calls during
 startup. However, the data is for each functions. You will have to
@@ -46,21 +48,10 @@ each functions does not really make sense because it is really time of the
 plugins (but not the functions) that you really care about.  
 
 I am poor at doing mental math, even for simple sums. However, with the power
-of a simple bash script and R, we can get all we want.
+of a simple bash script and `R`, we can get all we want.
 
-### Installation
-
-This is *NOT* a vim plugin! This is simply a profiler for your vim
-plugins that are installed through vim-plug.
-
-Download the `.zip` [here][zip] and then simply run the bash script:
-
-
-```BASH
-sh ./vim-plugins-profile.sh
-```
-
-Then open the `profile.png` file for the result! It is that simple.
+This utility automatically detects your plugins directory, and does the
+rest of the hard work for you.
 
 ### Supported Plugin-Managers
 
@@ -72,14 +63,52 @@ Here is the list of supported managers. Hopefully, your favourite plugin manager
  - [Pathogen]
 
 
+### Installation
+
+This is *NOT* a vim plugin! This is simply a profiler for your vim
+plugins that are installed through various plugin managers such as
+`vim-plug`.
+
+Download the `.zip` [here][zip] and then simply run the bash script:
+
+
+```BASH
+bash ./vim-plugins-profile.sh
+
+# Alternatively use Ruby powers! Less dependency, graph with ASCII art
+ruby ./vim-plugins-profile.rb
+
+# Or python if you are from the other camp.
+python vim-profiler.py 
+python vim-profiler.py -p # plot a bar chart
+
+# To use an alternative executable such as neovim, pass it as the first argument.
+ruby ./vim-plugins-profile.rb nvim
+```
+
+Then open the `profile.png` file for the result! It is that simple.
+
 
 ### Dependency
 
-You will need to install several tools before you can run this. Chances are that you already have them. The script prompts whether it should install the `R:ggplot2` package if you already have `R`. Here are the list of dependencies:
+*Nothing*. Well, at least `Bash` and `Ruby`, but most systems already comes with those pre-installed already.
+
+If not (e.g. in M\$ Windows systems), then you will need to install several tools before you can run this. 
+
+ - Bash (Cygwin, or Git for Windows will also work)
+ - Ruby 2.3 (other version might as well just work. If not, you can repurt an Issue then I'll fix it)
+ 
+To produce the eye-candy graphs, you can use either `R` or `Python`. 
+
+For `R`, the script prompts whether it should install the `R:ggplot2` package if you already have `R`. Here are the list of dependencies for it:
 
  - [R]
  - [R:ggplot2] (the ggplot2 package for R)
- - Bash (Cygwin, or Git for Windows will also work)
+
+For `Python`, you can use either `python2` or `python3`. If you have
+`matplotlib` (optional) installed, then you can even generate the bar plot.
+Implementation for people from the python camp is merged from [@bchretien](https://github.com/bchretien/vim-profiler). It also supports a custom command to run in the exec mode. Feel free to hack your way!
+
 
 ### TODO
 
