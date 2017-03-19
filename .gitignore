@@ -22,6 +22,7 @@ vignettes/*.pdf
 
 *.csv
 *.png
+*.svg
 
 *.Rproj.user
 .Rproj.user
