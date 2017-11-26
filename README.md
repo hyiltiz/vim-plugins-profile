@@ -53,6 +53,7 @@ of a simple bash script and `R`, we can get all we want.
 This utility automatically detects your plugins directory, and does the
 rest of the hard work for you.
 
+
 ### Supported Plugin-Managers
 
 Here is the list of supported managers. Hopefully, your favourite plugin manager is among the list. If not, or if you prefer to manage your own plguins (using symlinks, of course), we could still adjust the code.
