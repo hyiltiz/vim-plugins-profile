@@ -79,9 +79,9 @@ bash ./vim-plugins-profile.sh
 # Alternatively use Ruby powers! Less dependency, graph with ASCII art
 ruby ./vim-plugins-profile.rb
 
-# Or python if you are from the other camp.
-python vim-profiler.py 
-python vim-profiler.py -p # plot a bar chart
+# Or Python if you are from the other camp.
+python vim-plugins-profile.py 
+python vim-plugins-profile.py -p # plot a bar chart
 
 # To use an alternative executable such as neovim, pass it as the first argument.
 ruby ./vim-plugins-profile.rb nvim
@@ -108,7 +108,7 @@ For `R`, the script prompts whether it should install the `R:ggplot2` package if
 
 For `Python`, you can use either `python2` or `python3`. If you have
 `matplotlib` (optional) installed, then you can even generate the bar plot.
-Implementation for people from the python camp is merged from [@bchretien](https://github.com/bchretien/vim-profiler). It also supports a custom command to run in the exec mode. Feel free to hack your way!
+Implementation for people from the Python camp is merged from [@bchretien](https://github.com/bchretien/vim-profiler). It also supports a custom command to run in the exec mode. Feel free to hack your way!
 
 
 ### TODO
