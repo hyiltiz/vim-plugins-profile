@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Copyright 2015-2018, Hörmet Yiltiz <hyiltiz@github.com>
+# Copyright 2015-2019, Hörmet Yiltiz <hyiltiz@github.com>
 # Released under GNU GPL version 3 or later.
 
 set -eu
