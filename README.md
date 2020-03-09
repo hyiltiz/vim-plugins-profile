@@ -1,5 +1,15 @@
 [![Build Status](https://api.travis-ci.org/hyiltiz/vim-plugins-profile.svg?branch=master)](https://travis-ci.org/hyiltiz/vim-plugins-profile)
 
+## TL;DR
+```{BASH}
+# Ruby version as an example:
+ruby <(curl -sSL https://raw.githubusercontent.com/hyiltiz/vim-plugins-profile/master/vim-plugins-profile.rb)
+# or Python
+python <(curl -sSL https://raw.githubusercontent.com/hyiltiz/vim-plugins-profile/master/vim-plugins-profile.py)
+# or R
+bash <(curl -sSL https://raw.githubusercontent.com/hyiltiz/vim-plugins-profile/master/vim-plugins-profile.sh)
+```
+
 Here is a screenshot to have a quick look at what this is all about.
 
 ![My Plugins Profile](./test/result.png)
@@ -89,12 +99,7 @@ ruby ./vim-plugins-profile.rb nvim
 
 Then open the `profile.png` file for the result! It is that simple.
 
-You can even run it without installation (exmaple shown for Ruby):
-
-```ruby
-# Ruby version as an example:
-ruby <(curl -sSL https://raw.githubusercontent.com/hyiltiz/vim-plugins-profile/master/vim-plugins-profile.rb)
-```
+You can run it even without installation:
 
 ### Dependency
 
