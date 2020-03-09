@@ -89,7 +89,7 @@ ruby ./vim-plugins-profile.rb nvim
 
 Then open the `profile.png` file for the result! It is that simple.
 
-Even you can run it without installation:
+You can even run it without installation (exmaple shown for Ruby):
 
 ```ruby
 # Ruby version as an example:
