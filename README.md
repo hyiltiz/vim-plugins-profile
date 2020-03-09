@@ -89,6 +89,12 @@ ruby ./vim-plugins-profile.rb nvim
 
 Then open the `profile.png` file for the result! It is that simple.
 
+Even you can run it without installation:
+
+```ruby
+# Ruby version as an example:
+ruby <(curl -sSL https://raw.githubusercontent.com/hyiltiz/vim-plugins-profile/master/vim-plugins-profile.rb)
+```
 
 ### Dependency
 
