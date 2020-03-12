@@ -31,6 +31,10 @@ if [ -d "${vimfilesDir}plugged" ]; then
 elif [ -d "${vimfilesDir}bundle" ]; then
   echo "NeoBundle/Vundle/Pathogen has been detected."
   plugDir="bundle"
+elif [ -d "${vimfilesDir}bundle" ]; then
+    echo "Vim 8's native plugin-manager `packadd` detected."
+    echo "Point the variable `plugDir` to your plugins directory."
+    plugDir=" pack\/.+?\/((start)|(opt))" # ~/.vim/pack/xxxx/
 else
   echo "Cannot tell your plugin-manager. Adjust this bash script\n"
   echo "to meet your own needs for now."
