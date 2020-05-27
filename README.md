@@ -124,9 +124,6 @@ For `Python`, you can use either `python2` or `python3`. If you have
 Implementation for people from the Python camp is merged from [@bchretien](https://github.com/bchretien/vim-profiler). It also supports a custom command to run in the exec mode. Feel free to hack your way!
 
 
-### TODO
-
-- Maybe optionally use `gnuplot` or `matplotlib` instead of `R:ggplot2` if any of the other two are installed already. 
 
 [zip]: https://github.com/hyiltiz/vim-plugins-profile/archive/master.zip
 [vim-plug]: https://github.com/junegunn/vim-plug
