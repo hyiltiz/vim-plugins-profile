@@ -4,8 +4,10 @@
 ```{BASH}
 # Ruby version as an example:
 ruby <(curl -sSL https://raw.githubusercontent.com/hyiltiz/vim-plugins-profile/master/vim-plugins-profile.rb)
+
 # or Python (add -p flat to plot a bar chart)
 python <(curl -sSL https://raw.githubusercontent.com/hyiltiz/vim-plugins-profile/master/vim-plugins-profile.py)
+
 # or R
 bash <(curl -sSL https://raw.githubusercontent.com/hyiltiz/vim-plugins-profile/master/vim-plugins-profile.sh)
 ```
