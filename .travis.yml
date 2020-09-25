@@ -3,12 +3,13 @@ r:
   - release
     #- devel
 
+dist: xenial
+os: linux
+
 branches:
   only:
   - master
   - develop
-
-sudo: false
 
 addons:
   apt:
@@ -18,11 +19,6 @@ addons:
       - python-matplotlib
       #      - r-base 
       #      - r-base-dev
-
-branches:
-  only:
-    - master
-    - travis
 
 install:
   # Install vim plugins
