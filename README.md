@@ -89,7 +89,7 @@ Download the `.zip` [here][zip] and then simply run the bash script:
 
 
 ```BASH
-bash ./vim-plugins-profile.sh
+bash ./vim-plugins-profile.sh  # calls R after pre-processing
 
 # Use Perl powers! Built-in RegEx, no dependencies.
 perl ./vim-plugins-profile.pl
@@ -98,8 +98,7 @@ perl ./vim-plugins-profile.pl
 ruby ./vim-plugins-profile.rb
 
 # Or Python if you are from the other camp.
-python vim-plugins-profile.py
-python vim-plugins-profile.py -p # plot a bar chart
+python ./vim-plugins-profile.py # -p flag plots a bar chart
 
 # To use an alternative executable such as neovim, pass it as the first argument.
 ruby ./vim-plugins-profile.rb nvim
