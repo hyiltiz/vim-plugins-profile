@@ -51,6 +51,7 @@ script:
   - python ./vim-plugins-profile.py -n 5 vim -u .travis/vimrc
   - python ./vim-plugins-profile.py -n 5 -r 10 vim -u .travis/vimrc
   - python ./vim-plugins-profile.py -s vim -N -u NORC
+  - perl ./vim-plugins-profile.pl
   - ruby ./vim-plugins-profile.rb
   - yes | bash vim-plugins-profile.sh
   #- find ~/R/
