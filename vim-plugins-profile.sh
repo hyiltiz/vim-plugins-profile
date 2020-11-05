@@ -58,7 +58,7 @@ echo "Crunching data and generating profile plot ..."
 
 # Check if R is available
 echo " "
-type R > /dev/null 2>&1 || { echo >&2 "Package R is required but it's not installed. \nPlease install R using your package manager, \nor check out cran.r-project.org for instructions. \nAborting."; exit 1; }
+type R > /dev/null 2>&1 || { echo -e >&2 "Package R is required but it's not installed. \nPlease install R using your package manager, \nor check out cran.r-project.org for instructions. \nAborting."; exit 1; }
 
 
 # Still here? Great! Let's move on!
