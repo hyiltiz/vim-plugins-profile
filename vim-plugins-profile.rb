@@ -1,7 +1,11 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
+<<<<<<< Updated upstream
 # Copyright 2015-2020, Hörmet Yiltiz <hyiltiz@github.com>
+=======
+# Copyright 2015-2022, Hörmet Yiltiz <hyiltiz@github.com>
+>>>>>>> Stashed changes
 # Released under GNU GPL version 3 or later.
 
 # Users can pass "nvim" as a first argument to use neovim.

@@ -34,7 +34,7 @@ elif [ -d "${vimfilesDir}bundle" ]; then
 else
   echo "Cannot tell your plugin-manager. Adjust this bash script\n"
   echo "to meet your own needs for now."
-  echo 'Cue: `plugDir` variable would be a good starting place.'
+  echo 'Hint: `plugDir` variable would be a good starting place.'
   exit 1
 fi
 
