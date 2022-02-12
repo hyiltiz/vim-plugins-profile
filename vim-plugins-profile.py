@@ -3,9 +3,6 @@
 #
 # vim-profiler - Utility script to profile (n)vim (e.g. startup)
 # Copyright © 2015 Benjamin Chrétien
-<<<<<<< Updated upstream
-# Copyright © 2017-2020 Hörmet Yiltiz <hyiltiz@github.com>
-=======
 # Copyright © 2017-2022 Hörmet Yiltiz <hyiltiz@github.com>
 >>>>>>> Stashed changes
 #
