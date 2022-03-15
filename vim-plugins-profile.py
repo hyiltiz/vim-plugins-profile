@@ -4,7 +4,6 @@
 # vim-profiler - Utility script to profile (n)vim (e.g. startup)
 # Copyright © 2015 Benjamin Chrétien
 # Copyright © 2017-2022 Hörmet Yiltiz <hyiltiz@github.com>
->>>>>>> Stashed changes
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
