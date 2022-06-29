@@ -276,11 +276,14 @@ class StartupAnalyzer(object):
         avg_data = self.average_data()
         # Sort by average time
         rank = 0
+        total = 0
         for name, time in self.__sort_data(avg_data)[:n]:
             rank += 1
+            total += time
             print("%i\t%7.3f   %s" % (rank, time, name))
 
         print(''.center(length, '='))
+        print('\nTotal startup time: ' + str(round(total,2)))
 
     @staticmethod
     def __sort_data(d, reverse=True):
